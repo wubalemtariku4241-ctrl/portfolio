@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wubalem Tariku | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-light: #64748b;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            box-shadow: var(--shadow);
+            margin: 0 auto 1.5rem;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-list {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            background: rgba(37, 99, 235, 0.2);
+            color: #60a5fa;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(96, 165, 250, 0.3);
+        }
+
+        container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: block;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .timeline-item {
+            border-left: 2px solid #e2e8f0;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .company-date {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background: #f1f5f9;
+            padding: 1rem;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary);
+            color: #94a3b8;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body><header>
+        <div class="header-container">
+            <!-- Matches the uploaded file name: profile photo.jpg -->
+            <img src="profile photo.jpg" alt="Wubalem Tariku Bongare" class="profile-photo">
+            <h1>Wubalem Tariku Bongare</h1>
+            <p class="subtitle">Graduate Engineer in Construction Technology & Management | Sales Manager</p>
+            <div class="badge-list">
+                <span class="badge">Reg. No: GECTM/CR/99334</span>
+                <span class="badge">BSc COTM (Wolaita Sodo University)</span>
+            </div>
+        </div>
+    </header>
+
+    <container>
+        <!-- About Section -->
+        <section id="about">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>
+                A dedicated Graduate Engineer in Construction Technology & Management certified by the Ethiopian Construction Authority. Highly experienced in operational leadership, team leadership, stakeholder management, and data analysis, with a proven track record of managing end-to-end sales and administrative workflows.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+
+            <div class="timeline-item">
+                <div class="job-title">Sales Manager</div>
+                <div class="company-date">ACT IT PLC | Nov 2025 – Jul 2026</div>
+                <p>Managed strategic operations, client communications, and team workflows in fast-paced technology environments.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="job-title">Sales Coordinator</div>
+                <div class="company-date">ACT IT PLC | Aug 2024 – Nov 2025</div>
+                <p>Coordinated cross-functional teams, driving operational efficiency, stakeholder engagement, and project delivery support.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="job-title">Candidate Support & Data Coordinator (Intern)</div>
+                <div class="company-date">InfoMind Solutions (Dereja Team) | Oct 2023 – Nov 2023</div>
+                <p>Managed candidate queries, registration support, data integrity maintenance, and supported execution for the 2023 National Career Expo at Millennium Hall.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2><i class="fas fa-graduation-cap"></i> Education & Professional License</h2>
+
+            <div class="timeline-item">
+                <div class="job-title">Registered Graduate Engineer (GECTM)</div>
+                <div class="company-date">Ethiopian Construction Authority | Reg No: GECTM/CR/99334</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="job-title">BSc in Construction Technology and Management</div>
+                <div class="company-date">Wolaita Sodo University (Institute of Technology) | Graduated: March 2026</div>
+                <p>CGPA: 3.0 | Exit Exam Score: Pass (83%)</p>
+            </div>
+        </section>
+
+        <!-- Certifications & Training -->
+        <section id="certifications">
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <strong>Artificial Intelligence Fundamentals</strong>
+                    <div style="font-size: 0.85rem; color: var(--text-light);">Udacity (Dec 2024)</div>
+                </div>
+                <div class="skill-card">
+                    <strong>Data Analysis Fundamentals</strong>
+                    <div style="font-size: 0.85rem; color: var(--text-light);">Udacity (Dec 2024)</div></div>
+                <div class="skill-card">
+                    <strong>National Career Expo Support</strong>
+                    <div style="font-size: 0.85rem; color: var(--text-light);">Dereja / InfoMind Solutions</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Skills -->
+        <section id="skills">
+            <h2><i class="fas fa-cogs"></i> Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Construction Technology & Mgt</div>
+                <div class="skill-card">Sales & Operational Management</div>
+                <div class="skill-card">Stakeholder Communication</div>
+                <div class="skill-card">Data Analysis & Reporting</div>
+                <div class="skill-card">AI Fundamentals</div>
+                <div class="skill-card">Team Leadership & Coordination</div>
+            </div>
+        </section>
+    </container>
+
+    <footer>
+        <p>&copy; 2026 Wubalem Tariku Bongare. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
